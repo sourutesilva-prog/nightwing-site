@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nightwing | Site de fã</title>
+  <meta name="description" content="Site de fã sobre o Nightwing: história, jogo de missões, HQs, personagens, guia de Justiça Jovem, quiz e mural.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="index">
+
+<header class="topo">
+  <a class="marca" href="#principal" data-aba-link="principal">Night<span>wing</span></a>
+
+  <button id="btn-menu" class="btn-icone" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="abas">☰</button>
+
+  <nav id="abas" class="abas" role="tablist" aria-label="Seções do site">
+    <button class="aba ativa" data-aba="principal" role="tab" type="button">Principal</button>
+    <button class="aba" data-aba="jogo" role="tab" type="button">Jogo</button>
+    <button class="aba" data-aba="quadrinhos" role="tab" type="button">Quadrinhos</button>
+    <button class="aba" data-aba="justica-jovem" role="tab" type="button">Justiça Jovem</button>
+    <button class="aba" data-aba="personagens" role="tab" type="button">Personagens</button>
+    <button class="aba" data-aba="quiz" role="tab" type="button">Quiz</button>
+    <button class="aba" data-aba="mural" role="tab" type="button">Mural</button>
+  </nav>
+
+  <button id="btn-tema" class="btn-tema" type="button" aria-label="Alternar modo claro/escuro">☾</button>
+</header>
+
+<main>
+
+  <!-- ==================== PRINCIPAL ==================== -->
+  <section id="principal" class="painel ativo">
+
+    <div class="hero">
+      <!-- Cenário feito só com CSS e JS (lua, luzes e cidade à noite) -->
+      <div class="hero-cena" aria-hidden="true">
+        <div class="lua"></div>
+        <div class="feixe a"></div>
+        <div class="feixe b"></div>
+        <svg id="cidade" class="cidade" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMax slice"></svg>
+      </div>
+
+      <div class="hero-conteudo">
+        <div class="hero-texto">
+          <p class="hero-sub">Richard “Dick” Grayson</p>
+          <h1>Night<span class="destaque-palavra">wing</span></h1>
+          <p class="hero-lead">De acrobata de circo a líder de heróis: o primeiro Robin que aprendeu a voar sozinho.</p>
+          <div class="hero-botoes">
+            <button class="btn btn-principal" type="button" data-aba-link="jogo">Jogar missões</button>
+            <button class="btn btn-contorno" type="button" data-aba-link="quadrinhos">Ler as HQs</button>
+            <button class="btn btn-contorno" type="button" data-aba-link="justica-jovem">Guia de Justiça Jovem</button>
+          </div>
+        </div>
+
+        <!-- Se não existir img/asa.jpg, este quadro some sozinho -->
+        <div class="hero-arte">
+          <img src="img/asa.jpg" alt="Imagem do Nightwing" onerror="this.parentElement.remove()">
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b data-contar="1940">1940</b><span>estreia como Robin (Detective Comics #38)</span></div>
+      <div class="stat"><b data-contar="1984">1984</b><span>nasce o Nightwing (Tales of the Teen Titans #44)</span></div>
+      <div class="stat"><b>Blüdhaven</b><span>a cidade que ele protege</span></div>
+      <div class="stat"><b>Titãs</b><span>a equipe que ele lidera e inspira</span></div>
+    </div>
+
+    <div class="container">
+
+      <h2 class="titulo-secao">A história de Dick Grayson</h2>
+      <div class="linha">
+        <article class="linha-item"><div class="linha-ponto"></div><div class="cartao"><h3>O menino do circo</h3><p>Dick nasce no Haly’s Circus, onde os pais faziam parte dos Flying Graysons, uma família de trapezistas. Desde pequeno aprende acrobacia, equilíbrio e a confiar nas pessoas ao redor.</p></div></article>
+        <article class="linha-item"><div class="linha-ponto"></div><div class="cartao"><h3>A noite que mudou tudo</h3><p>O mafioso Tony Zucco sabota o trapézio e os pais de Dick morrem diante do público. Bruce Wayne estava na plateia, reconhece a dor do menino e o acolhe em Wayne Manor.</p></div></article>
+        <article class="linha-item"><div class="linha-ponto"></div><div class="cartao"><h3>O primeiro Robin</h3><p>Em 1940, Dick veste o uniforme de Robin. Ele traz humor e leveza para um Batman sombrio e muda a forma como o herói trabalha.</p></div></article>
+        <article class="linha-item"><div class="linha-ponto"></div><div class="cartao"><h3>Líder dos Jovens Titãs</h3><p>Longe da sombra do Batman, Dick lidera os Jovens Titãs, cria amizades duradouras e descobre que sabe inspirar equipes inteiras.</p></div></article>
+        <article class="linha-item"><div class="linha-ponto"></div><div class="cartao"><h3>Nasce o Nightwing</h3><p>Em 1984, Dick deixa o manto de Robin e assume a própria identidade. O nome vem de uma lenda kryptoniana que ele conheceu numa aventura ao lado do Superman.</p></div></article>
+        <article class="linha-item"><div class="linha-ponto"></div><div class="cartao"><h3>Blüdhaven e além</h3><p>Ele se muda para Blüdhaven, cidade vizinha de Gotham e muito corrupta. Depois enfrenta perdas, assume o manto do Batman por um tempo, vira espião em Grayson e volta ainda mais confiante.</p></div></article>
+      </div>
+
+      <h2 class="titulo-secao">Propósito</h2>
+      <div class="proposito">
+        <p>Nightwing luta para provar que dá para combater o crime sem perder a esperança. Onde o Batman usa o medo, Dick usa a confiança, o carisma e o trabalho em equipe. Ele quer proteger quem não tem voz, <strong>inspirar outros heróis</strong> e manter a família unida quando tudo parece escuro.</p>
+      </div>
+
+      <h2 class="titulo-secao">Habilidades</h2>
+      <div class="grade g4">
+        <article class="cartao cartao-midia"><div class="midia"><span>🤸</span><img src="img/acrobacia.jpg" alt="Acrobacia" onerror="this.remove()"></div><h3>Acrobacia suprema</h3><p>Um dos melhores acrobatas do universo DC. Piruetas, saltos e quedas controladas desconcertam qualquer adversário.</p></article>
+        <article class="cartao cartao-midia"><div class="midia"><span>🥋</span><img src="img/luta.jpg" alt="Artes marciais" onerror="this.remove()"></div><h3>Artes marciais</h3><p>Mestre em Kali/Escrima e treinado pelo Batman. Mistura velocidade, fluidez e golpes em movimento.</p></article>
+        <article class="cartao cartao-midia"><div class="midia"><span>🔍</span><img src="img/detetive.jpg" alt="Detetive" onerror="this.remove()"></div><h3>Detetive e estrategista</h3><p>Aprendeu investigação com o Batman e monta planos rápidos mesmo sob pressão.</p></article>
+        <article class="cartao cartao-midia"><div class="midia"><span>🤝</span><img src="img/lider.jpg" alt="Liderança" onerror="this.remove()"></div><h3>Liderança e carisma</h3><p>Lidera Titãs, Outsiders e a própria Bat-Família. As pessoas confiam nele por instinto.</p></article>
+      </div>
+
+      <h2 class="titulo-secao">Ferramentas e equipamentos</h2>
+      <div class="grade g4">
+        <article class="cartao cartao-midia"><div class="midia"><span>⚡</span><img src="img/escrima.jpg" alt="Bastões de escrima" onerror="this.remove()"></div><h3>Bastões de escrima</h3><p>Dois bastões que se unem em um e podem liberar descargas elétricas.</p></article>
+        <article class="cartao cartao-midia"><div class="midia"><span>🪝</span><img src="img/rapel.jpg" alt="Gancho de rapel" onerror="this.remove()"></div><h3>Gancho de rapel</h3><p>Permite cruzar prédios, escalar paredes e balançar entre telhados.</p></article>
+        <article class="cartao cartao-midia"><div class="midia"><span>🏍️</span><img src="img/moto.jpg" alt="Moto" onerror="this.remove()"></div><h3>Moto</h3><p>Veloz e silenciosa, ideal para as ruas apertadas de Blüdhaven.</p></article>
+        <article class="cartao cartao-midia"><div class="midia"><span>🥷</span><img src="img/traje.jpg" alt="Traje e máscara" onerror="this.remove()"></div><h3>Traje e máscara</h3><p>Traje reforçado, máscara com lentes adaptáveis e detalhes em azul.</p></article>
+      </div>
+
+      <h2 class="titulo-secao">Na família DC</h2>
+      <div class="grade g3">
+        <article class="cartao"><h3>Batman e a Bat-Família</h3><p>Dick é o primeiro filho adotivo de Bruce e o irmão mais velho de Jason Todd, Tim Drake e Damian Wayne. Cuida de todos e muitas vezes resolve as brigas da casa.</p></article>
+        <article class="cartao"><h3>Jovens Titãs</h3><p>Fundador e líder de várias formações. Foi lá que conheceu Estelar, Ravena, Mutano, Ciborgue e tantos outros.</p></article>
+        <article class="cartao"><h3>Liga da Justiça e Outsiders</h3><p>Já trabalhou com a Liga, é considerado um dos grandes líderes do universo DC e chegou a assumir o manto do Batman.</p></article>
+      </div>
+
+      <p class="legenda">Veja aliados e inimigos na aba <button class="link" type="button" data-aba-link="personagens">Personagens</button>.</p>
+    </div>
+  </section>
+
+  <!-- ==================== JOGO ==================== -->
+  <section id="jogo" class="painel">
+    <div class="container">
+      <h2 class="titulo-secao">Missões: Patrulha de Blüdhaven</h2>
+      <p class="lead">Escolha uma missão, derrote o vilão e cuide da sua vida e da sua energia. Cada vitória libera uma missão mais difícil.</p>
+
+      <div class="jogo">
+        <aside id="lista-missoes" class="lista-missoes" aria-label="Lista de missões">Carregando missões...</aside>
+
+        <div class="batalha">
+          <div class="placar">
+            <span>Pontos: <b id="pontos">0</b></span>
+            <span>Kits médicos: <b id="kits">3</b></span>
+            <span id="titulo-missao">Escolha uma missão</span>
+          </div>
+
+          <div class="lutadores">
+            <div class="lutador" id="caixa-jogador">
+              <div class="midia avatar"><span>🤸</span><img src="img/pfp.jpg" alt="Nightwing" onerror="this.remove()"></div>
+              <h3>Nightwing</h3>
+              <div class="barra"><div class="preenchimento vida" id="barra-vida"></div><em id="txt-vida">100 / 100</em></div>
+              <div class="barra"><div class="preenchimento energia" id="barra-energia"></div><em id="txt-energia">100 / 100</em></div>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="lutador" id="caixa-inimigo">
+              <div class="midia avatar" id="avatar-inimigo"><span id="icone-inimigo">❔</span></div>
+              <h3 id="nome-inimigo">—</h3>
+              <div class="barra"><div class="preenchimento inimigo" id="barra-vida-inimigo"></div><em id="txt-vida-inimigo">0 / 0</em></div>
+              <div class="status" id="status-inimigo"></div>
+            </div>
+          </div>
+
+          <p class="cena" id="cena">Selecione uma missão na lista para começar.</p>
+
+          <div class="acoes" id="acoes">
+            <button class="acao" type="button" data-acao="golpe"><b>Golpe de escrima</b><small>Dano médio • +10 energia</small></button>
+            <button class="acao" type="button" data-acao="gancho"><b>Gancho</b><small>Dano baixo • atordoa • −10 energia</small></button>
+            <button class="acao" type="button" data-acao="esquiva"><b>Acrobacia</b><small>Esquiva do próximo ataque • −15</small></button>
+            <button class="acao acao-forte" type="button" data-acao="final"><b>Voadora final</b><small>Dano alto • −50 energia</small></button>
+            <button class="acao acao-cura" type="button" data-acao="kit"><b>Kit médico</b><small>Cura 25 de vida</small></button>
+          </div>
+
+          <ul class="registro" id="registro" aria-live="polite"></ul>
+          <button class="btn btn-contorno" id="btn-reiniciar" type="button">Reiniciar jogo</button>
+        </div>
+      </div>
+
+      <h3 class="subtitulo">Ranking</h3>
+      <div class="ranking-caixa">
+        <form id="form-ranking" class="form" novalidate>
+          <label for="nome-ranking">Seu nome no ranking</label>
+          <input id="nome-ranking" type="text" maxlength="20" autocomplete="nickname">
+          <button class="btn btn-principal" id="btn-ranking" type="submit" disabled>Enviar pontuação</button>
+          <p id="aviso-ranking" class="aviso" role="status"></p>
+        </form>
+        <ol id="lista-ranking" class="ranking"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== QUADRINHOS ==================== -->
+  <section id="quadrinhos" class="painel">
+    <div class="container">
+      <h2 class="titulo-secao">HQs em ordem cronológica</h2>
+      <p class="lead">Uma trilha de leitura para entender a história do Dick, da estreia como Robin até o Nightwing de hoje. Marque as que você já leu!</p>
+
+      <div class="filtros">
+        <input id="busca-hq" type="search" placeholder="Buscar por título, autor ou assunto..." aria-label="Buscar HQs">
+        <select id="era-hq" aria-label="Filtrar por era"><option value="">Todas as eras</option></select>
+      </div>
+
+      <div class="progresso">
+        <span id="txt-progresso">0 de 0 lidas</span>
+        <div class="barra-fina"><div id="barra-progresso"></div></div>
+      </div>
+
+      <div id="lista-hqs" class="hq-lista">Carregando HQs...</div>
+      <p id="hq-vazio" class="lead" hidden>Nenhuma HQ encontrada com essa busca.</p>
+      <p class="legenda">As datas e os créditos são para estudo. Confira em fontes oficiais antes de usar em trabalhos.</p>
+    </div>
+  </section>
+
+  <!-- ==================== JUSTIÇA JOVEM ==================== -->
+  <section id="justica-jovem" class="painel">
+    <div class="container">
+      <h2 class="titulo-secao">Justiça Jovem: guia de episódios</h2>
+      <p class="lead">Um guia da série animada em que Dick Grayson aparece primeiro como Robin e depois como Nightwing. Marque os episódios que você já assistiu e acompanhe o seu progresso.</p>
+
+      <div class="aviso-legal">
+        <strong>Para assistir:</strong> este guia mostra só informações (títulos e resumos). Os episódios devem ser vistos nos serviços oficiais, e o catálogo muda de tempos em tempos.
+        <a class="btn btn-contorno" href="https://www.justwatch.com/br/serie/young-justice" target="_blank" rel="noopener">Ver onde assistir agora (JustWatch)</a>
+      </div>
+
+      <div class="progresso">
+        <span id="jj-progresso-txt">0 de 0 assistidos</span>
+        <div class="barra-fina"><div id="jj-progresso-barra"></div></div>
+      </div>
+
+      <div id="jj-chips" class="chips" role="group" aria-label="Escolher temporada"></div>
+
+      <article id="jj-info" class="cartao jj-info">Carregando temporadas...</article>
+
+      <div class="botoes jj-botoes">
+        <button id="jj-marcar" class="btn btn-contorno" type="button">Marcar temporada toda</button>
+        <button id="jj-limpar" class="btn btn-contorno" type="button">Limpar temporada</button>
+      </div>
+
+      <ol id="jj-episodios" class="episodios"></ol>
+
+      <p class="legenda">Títulos originais em inglês, conferidos no <a class="link" href="https://epguides.com/YoungJustice/" target="_blank" rel="noopener">epguides</a> e no <a class="link" href="https://www.thetvdb.com/series/young-justice" target="_blank" rel="noopener">TheTVDB</a>. Os resumos foram escritos para este site, sem spoilers. Justiça Jovem é uma obra da DC / Warner Bros. Discovery.</p>
+    </div>
+  </section>
+
+  <!-- ==================== PERSONAGENS ==================== -->
+  <section id="personagens" class="painel">
+    <div class="container">
+      <h2 class="titulo-secao">Aliados e inimigos</h2>
+      <div class="chips" role="group" aria-label="Filtrar personagens">
+        <button class="chip ativo" type="button" data-tipo="">Todos</button>
+        <button class="chip" type="button" data-tipo="aliado">Aliados</button>
+        <button class="chip" type="button" data-tipo="inimigo">Inimigos</button>
+      </div>
+      <div id="grade-personagens" class="grade g3">Carregando personagens...</div>
+    </div>
+  </section>
+
+  <!-- ==================== QUIZ ==================== -->
+  <section id="quiz" class="painel">
+    <div class="container">
+      <h2 class="titulo-secao">Quiz do Nightwing</h2>
+      <p class="lead">As perguntas e a correção vêm do servidor em C#. Quanto você sabe sobre o Dick?</p>
+      <form id="form-quiz" novalidate>
+        <div id="quiz-perguntas">Carregando perguntas...</div>
+        <button class="btn btn-principal" type="submit">Ver meu resultado</button>
+        <button class="btn btn-contorno" type="button" id="btn-refazer" hidden>Refazer</button>
+      </form>
+      <p id="quiz-resultado" class="resultado" role="status"></p>
+    </div>
+  </section>
+
+  <!-- ==================== MURAL ==================== -->
+  <section id="mural" class="painel">
+    <div class="container">
+      <h2 class="titulo-secao">Mural dos fãs</h2>
+      <form id="form-mural" class="form" novalidate>
+        <label for="nome">Seu nome</label>
+        <input id="nome" name="nome" type="text" maxlength="30" autocomplete="nickname" required>
+
+        <label for="texto">Seu comentário</label>
+        <textarea id="texto" name="texto" rows="3" maxlength="300" required></textarea>
+        <small id="contador">0 / 300</small>
+
+        <button class="btn btn-principal" type="submit">Publicar</button>
+        <p id="mural-aviso" class="aviso" role="status"></p>
+      </form>
+      <ul id="lista-comentarios" class="comentarios"></ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <p>Site de fã sobre o Nightwing, sem fins comerciais. Nightwing e DC são marcas da DC Comics / Warner Bros. Discovery.</p>
+  <p id="visitas" class="visitas"></p>
+</footer>
+
+<script src="js/comum.js"></script>
+<script src="js/jogo.js"></script>
+<script src="js/hqs.js"></script>
+<script src="js/justica-jovem.js"></script>
+<script src="js/personagens.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/mural.js"></script>
+</body>
+</html>

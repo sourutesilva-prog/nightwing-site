@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: nightwing-site
+    runtime: docker
+    plan: free
+    healthCheckPath: /

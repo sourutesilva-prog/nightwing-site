@@ -1,0 +1,3 @@
+Coloque aqui as imagens do site (veja os nomes no PASSO-A-PASSO.md).
+Exemplo: asa.jpg, acrobacia.jpg, pfp.jpg ...
+Se uma imagem nao existir, o site mostra um emoji no lugar.
